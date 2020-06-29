@@ -9,8 +9,19 @@
        
        Employee attrition is a major cost to an organization and predicting such attritions is the most important requirement of the Human Resources department in many organizations. In this problem, your task is to predict the attrition rate of employees of an organization.</br>
        
-       [Dataset](https://www.kaggle.com/webman19/hacker-earth-will-your-employees-leave-you)  
+       [Dataset](https://www.kaggle.com/webman19/hacker-earth-will-your-employees-leave-you)  </br>
        
+ ### Solution by using Multiple Linear Regression
+ - ANN
+ - XGBRegressor
+ - statsmodels
+ - RandomForestRegressor
+ - RidgeCV
+ - Lesso
+ - BayesianRidge, ARDRegression, LinearRegression
+ - SVR
+
+
 ### 2. Employee details
 
    - **Problem statement**
@@ -44,3 +55,4 @@
      | Pay_Scale | float |
      | Collaboration_and_Teamwork	 | int |
      | Compensation_and_Benefits | varchar(10) |
+     ### Solution by using MYSQL
