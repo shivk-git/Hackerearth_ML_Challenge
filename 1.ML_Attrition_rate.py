@@ -157,7 +157,7 @@ y_rid = stdy.inverse_transform(y_rid)
 y_rid
 
 
-## 5.Using Lesso
+## 6.Using Lesso
 from sklearn.linear_model import Lesso
 les = Lasso(alpha=0.3, normalize=True)
 les.fit(X,Y)
@@ -167,7 +167,7 @@ y_les = stdy.inverse_transform(y_les)
 y_les
 
 
-## 6. Using BayesianRidge, ARDRegression, LinearRegression
+## 7.Using BayesianRidge, ARDRegression, LinearRegression
 from sklearn.linear_model import BayesianRidge
 from sklearn.linear_model import ARDRegression
 from sklearn.linear_model import LinearRegression
@@ -180,7 +180,7 @@ y_lr = stdy.inverse_transform(y_lr)
 y_lr
 
 
-## 7. Using Spport vector machine
+## 8.Using Spport vector machine
 from sklearn.svm import SVR
 regressor = SVR(kernel='rbf', gamma='scale', tol=0.0000000000001, epsilon=0.2)
 regressor.fit(X, Y.ravel())
