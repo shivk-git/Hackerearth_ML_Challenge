@@ -83,7 +83,7 @@ X_test = stdx.transform(X_test)
 X_test
 
 
-## 1.Prediction using artificial newral network(ANN)
+## 1.Prediction using artificial neural network (ANN)
 import keras
 import keras.backend as kb
 import tensorflow as tf
