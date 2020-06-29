@@ -1,0 +1,65 @@
+/* Creating a employee table */
+create table Employee(Employee_ID varchar(10), Age int, Education int, Relationship_Status varchar(100),
+                      Hometown varchar(15), Name varchar(15), Gender varchar(1));
+                      
+/* inserting data into Employee table */
+insert into Employee(Employee_ID, Age, Education, Relationship_Status, Hometown, Name, Gender)
+                     values("EID_7044", 47, 4, "Married", "Franklin", "Paul Jones", "M");
+insert into Employee(Employee_ID, Age, Education, Relationship_Status, Hometown, Name, Gender)
+                    values("EID_11601", 43, 3, "Married", "Springfield", "Roger Reyes", "M");
+insert into Employee(Employee_ID, Age, Education, Relationship_Status, Hometown, Name, Gender)
+                    values("EID_4392", 64, 4, "Single", "Franklin", "Shane Martin", "M");
+insert into Employee(Employee_ID, Age, Education, Relationship_Status, Hometown, Name, Gender)
+                    values("EID_13606", 27, 3, "Married", "Franklin", "Christopher", "M");
+insert into Employee(Employee_ID, Age, Education, Relationship_Status, Hometown, Name, Gender)
+                    values("EID_7656", 45, 5, "Married", "Lebanon", "Jacob Strong", "M");
+insert into Employee(Employee_ID, Age, Education, Relationship_Status, Hometown, Name, Gender)
+                    values("EID_8156", 44, 4, "Single", "Clinton", "Colleen strong", "F");
+insert into Employee(Employee_ID, Age, Education, Relationship_Status, Hometown, Name, Gender)
+                    values("EID_3577", 64, 4, "Single", "Washingtom", "James Wise", "M");
+insert into Employee(Employee_ID, Age, Education, Relationship_Status, Hometown, Name, Gender)
+                    values("EID_5730", 50, 4, "Married", "Springfield", "Brenda Marques", "F");
+insert into Employee(Employee_ID, Age, Education, Relationship_Status, Hometown, Name, Gender)
+                    values("EID_6064", 65, 1, "Married", "Franklin", "Robert George", "M");
+                    
+/* For see Employee table */                  
+/* SELECT * FROM Employee */
+
+
+/* creating a Service Table */
+create table Service(Employee_ID varchar(10), Unit varchar(15), Post_Level int, Time_since_promotion int,Time_of_service float, 
+                        Pay_Scale float, Collaboration_and_Teamwork int, Compensation_and_Benefits varchar(10));
+
+/* Inserting data into Servie Table */
+insert into Service(Employee_ID, Unit, Post_Level, Time_since_promotion, Time_of_service, Pay_Scale, Collaboration_and_Teamwork, Compensation_and_Benefits)
+                   values("EID_7044","Sales", 2, 1, 9, 8.0, 4, "Type4");
+insert into Service(Employee_ID, Unit, Post_Level, Time_since_promotion, Time_of_service, Pay_Scale, Collaboration_and_Teamwork, Compensation_and_Benefits)
+                   values("EID_11601","Sales", 3, 2, 14, 10.0, 4, "Type2");
+insert into Service(Employee_ID, Unit, Post_Level, Time_since_promotion, Time_of_service, Pay_Scale, Collaboration_and_Teamwork, Compensation_and_Benefits)
+                   values("EID_4392","Logistics", 3, 1, 26, 5.0, 2, "Type2");
+insert into Service(Employee_ID, Unit, Post_Level, Time_since_promotion, Time_of_service, Pay_Scale, Collaboration_and_Teamwork, Compensation_and_Benefits)
+                   values("EID_13606","Human RM", 5, 3, 3,  6.0, 3, "Type3");
+insert into Service(Employee_ID, Unit, Post_Level, Time_since_promotion, Time_of_service, Pay_Scale, Collaboration_and_Teamwork, Compensation_and_Benefits)
+                   values("EID_7656","Purchasing", 1, 4, 7, 8.0, 3, "Type3");                   
+insert into Service(Employee_ID, Unit, Post_Level, Time_since_promotion, Time_of_service, Pay_Scale, Collaboration_and_Teamwork, Compensation_and_Benefits)
+                   values("EID_8156","Purchasing", 1, 1, 21, 5.0, 3, "Type2");
+insert into Service(Employee_ID, Unit, Post_Level, Time_since_promotion, Time_of_service, Pay_Scale, Collaboration_and_Teamwork, Compensation_and_Benefits)
+                   values("EID_3577","Purchasing", 5, 2, 32, 7.0, 4, "Type2");
+insert into Service(Employee_ID, Unit, Post_Level, Time_since_promotion, Time_of_service, Pay_Scale, Collaboration_and_Teamwork, Compensation_and_Benefits)
+                   values("EID_5730","Sales", 2, 4, 25, 9.0, 5, "Type2");
+insert into Service(Employee_ID, Unit, Post_Level, Time_since_promotion, Time_of_service, Pay_Scale, Collaboration_and_Teamwork, Compensation_and_Benefits)
+                   values("EID_6064","IT", 2, 2, 37, 1.0, 4, "Type2");
+                   
+/* For see Employee table */                  
+/* SELECT * FROM service */
+
+/* For  see all table */
+
+/* Query Solution */
+select E.Employee_ID, E.Name
+from Employee as E, Service as S
+where E.Gender='F' and 
+    E.Employee_ID = S.Employee_ID and
+    S.Unit = 'Sales' and
+    S.Time_since_promotion > 1 and
+    S.Pay_Scale > 1
