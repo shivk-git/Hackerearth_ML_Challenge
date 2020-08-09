@@ -1,4 +1,6 @@
 # Hackerearth_ML_challenge_will_your_employee_leave_you?
+32 rank out of 5164 participent
+Linear Regression, MySQL Database
 ## Problems:
 
 ### 1. Predict the employee attrition rate in organizations
