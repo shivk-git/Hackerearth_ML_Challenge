@@ -56,3 +56,6 @@
      | Collaboration_and_Teamwork	 | int |
      | Compensation_and_Benefits | varchar(10) |
      ### Solution by using MYSQL
+
+### Rank 32 out of 5164 participents
+### Accuracy 81.318
